@@ -24,6 +24,7 @@ export class CustomerService {
     }
 
     this.customers.push(customer)
+    this.customers.push(customer2)
   }
 
   getList(){
