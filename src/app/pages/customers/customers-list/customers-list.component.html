@@ -1,2 +1,23 @@
-<p *ngFor=" let customer of customers">{{ customer.name }} - {{ customer.email }}</p>
+<!-- <p *ngFor=" let customer of customers">{{ customer.name }} - {{ customer.email }}</p> -->
 
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Data Nascimento</th>
+        <th scope="col">Email</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor=" let customer of customers">
+        <th scope="row">{{ customer.id }}</th>
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.dateOfBirth }}</td>
+        <td>{{ customer.email }}</td>
+        <td>x</td>
+      </tr>
+      
+    </tbody>
+  </table>
