@@ -9,6 +9,8 @@ import { CustomersComponent } from './pages/customers/customers.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CustomersListComponent } from './pages/customers/customers-list/customers-list.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CustomersEditComponent } from './pages/customers/customers-edit/customers-edit.component';
+import { CustomersFormComponent } from './pages/customers/customers-form/customers-form.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { HomeComponent } from './pages/home/home.component';
     CustomersComponent,
     NavbarComponent,
     CustomersListComponent,
-    HomeComponent
+    HomeComponent,
+    CustomersEditComponent,
+    CustomersFormComponent
   ],
   imports: [
     BrowserModule,

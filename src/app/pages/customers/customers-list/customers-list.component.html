@@ -14,9 +14,9 @@
       <tr *ngFor=" let customer of customers">
         <th scope="row">{{ customer.id }}</th>
         <td>{{ customer.name }}</td>
-        <td>{{ customer.dateOfBirth }}</td>
+        <td>{{ customer.dateOfBirth | date : 'dd/MM/yyyy' }}</td>
         <td>{{ customer.email }}</td>
-        <td>x</td>
+        <td><a [routerLink]="['/customers-edit', customer.id]" class="btn btn-primary">Edit</a> | <a href="#" class="btn btn-danger">Delete</a></td>
       </tr>
       
     </tbody>
